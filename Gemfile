@@ -8,8 +8,10 @@ gem 'rails', '3.0.10'
 gem 'sqlite3'
 gem 'cancan'
 gem 'paperclip'
+gem 'jquery-rails'
 
 group :development, :test do
+  gem 'annotate'
   gem 'pry'
   gem 'pry-doc'
   gem 'ruby-debug', :platforms => [:ruby_18]

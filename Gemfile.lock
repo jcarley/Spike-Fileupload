@@ -32,7 +32,6 @@ GEM
     archive-tar-minitar (0.5.2)
     arel (2.0.10)
     builder (2.1.2)
-    cancan (1.6.7)
     cocaine (0.2.0)
     coderay (0.9.8)
     columnize (0.3.4)
@@ -129,7 +128,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  cancan
   jquery-rails
   mongrel (= 1.2.0.pre2)
   paperclip

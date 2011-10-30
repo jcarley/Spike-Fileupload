@@ -1,0 +1,13 @@
+<div>
+  <%= link_to "Upload a document", new_document_path %>
+  <table>
+    <tr>
+      <td>Title</td>
+    </tr>
+    <% @documents.each do |d| %>
+      <tr>
+        <td><%= link_to d.title, document_path(d) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

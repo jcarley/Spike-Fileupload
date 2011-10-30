@@ -1,0 +1,14 @@
+<h3><%= @document.title %></h3>
+<%= simple_format(@document.description) %>
+
+<% if @document.asset.exists? %>
+  <div class="asset">
+    <p>
+      <%= link_to File.basename(@document.asset.path), @document.asset.url %>
+    </p>
+    <p>
+      <small><%= number_to_human_size(@document.asset.size) %>
+      (<%= @document.asset.content_type %>)</small>
+    </p>
+  </div>
+<% end %>

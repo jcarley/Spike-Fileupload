@@ -14,4 +14,4 @@ doc/app
 .#*
 *~
 .DS_Store
-
+public/system/**/*

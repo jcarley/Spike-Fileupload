@@ -19,6 +19,7 @@ class DocumentsController < ApplicationController
 
   def new
     @document = Document.new
+    3.times { @document.assets.build }
   end
 
   def edit

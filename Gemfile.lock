@@ -31,11 +31,16 @@ GEM
     annotate (2.4.0)
     archive-tar-minitar (0.5.2)
     arel (2.0.10)
+    bcrypt-ruby (3.0.1)
     builder (2.1.2)
     cocaine (0.2.0)
     coderay (0.9.8)
     columnize (0.3.4)
     daemons (1.0.10)
+    devise (1.4.9)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     gem_plugin (0.2.3)
@@ -59,6 +64,7 @@ GEM
     mongrel (1.2.0.pre2)
       daemons (~> 1.0.10)
       gem_plugin (~> 0.2.3)
+    orm_adapter (0.0.5)
     paperclip (2.4.5)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -121,6 +127,8 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.30)
+    warden (1.0.6)
+      rack (>= 1.0)
     yard (0.7.3)
 
 PLATFORMS
@@ -128,6 +136,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  devise (~> 1.4.9)
   jquery-rails
   mongrel (= 1.2.0.pre2)
   paperclip

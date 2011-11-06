@@ -10,7 +10,7 @@
   <% number = 0 %>
   <%= f.fields_for :assets do |asset| %>
     <p>
-      <%= asset.label :asset, "File ##{number += 1}" %>
+      <%= asset.label :asset, "File #{number += 1}" %>
       <%= asset.file_field :asset %>
     </p>
   <% end %>
